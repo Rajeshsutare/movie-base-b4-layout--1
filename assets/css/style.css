@@ -1,0 +1,327 @@
+
+:root{
+    --color-primary :#f6d200;
+    --color-gray : 	#B0B0B0;
+    --color-dark : #000;
+    --color-white : #fff;
+}
+a:link,
+a:visited{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none
+}
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,700;1,400;1,700&family=Orbitron:wght@800&family=Playfair+Display:ital,wght@1,600&family=Roboto+Slab:wght@500;700&display=swap');
+*,*::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-gray);
+    color: var(--color-dark);
+    line-height: 1.5;
+    font-size:3rem;
+    font-family: 'Asap', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Slab', serif;
+}
+
+.header-site{
+    background-color: var(--color-dark);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+text-transform: uppercase;
+}
+.site-info{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.header-title{
+    color: var(--color-white);
+}
+.header-descr{
+    color: var(--color-primary);
+    font-style: italic;
+    font-weight: bold;
+    margin-top: -6px;
+}
+.main-menu{
+    background-color: var(--color-primary);
+    width: 100%;
+}
+.main-menu ul{
+    list-style-type: none;
+}
+.main-menu ul li a{
+text-decoration: none;
+color: var(--color-dark);
+display: block;
+padding: 5px 10px;
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+text-transform: capitalize;
+transition: all .5s ease-in-out;
+}
+
+.main-menu ul li a:hover, .main-menu ul li a :focus{
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+}
+
+/* .main-content-area */
+
+.main-content-area, .rightSideBar{
+ padding: 20px;
+}
+.rightSideBar{
+    display: flex;
+    order: -1;
+}
+
+/* posts css >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.post-img{
+    height: 250px;
+}
+.post-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.movie-post{
+    display: flex;
+}
+
+.post-content h3{
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+
+}
+.post-content p{
+    padding: 20px;
+    color: #000;
+
+}
+.post a:hover{
+    text-decoration: none;
+}
+
+.movie-today{
+    width: 100%;
+    height: 650px;
+}
+
+.movie-img{
+    width: 100%;
+    height: 350px;
+}
+.movie-img img{
+    width: 100%;
+    height: 100%;
+}
+.movie-today-post{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+.movie-today-post h2{
+    text-align: center;
+    font-weight: 700;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.movie-today-Detail{
+    padding: 15px;
+    font-weight: 700;
+}
+.spanInfo{
+    margin-bottom: 20px;
+}
+.spanInfo span{
+   margin-right: 20px;
+
+}
+
+
+/* download css  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.download h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: 700;
+}
+.dowanload-img{
+    width: 100%;
+    height: 150px;
+   
+}
+.download-btn{
+    background-color: var(--color-dark);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.dowanload-img img{
+    width: 100%;
+    height: 150px;
+    
+}
+.cast-img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.box-rating{
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    text-align: center;
+    font-weight: 600;
+    padding: 15px;
+    margin-top: 15px;
+}
+/* gallay css  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.gallary-heading{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+.gallary-heading img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.side-img{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+.side-img img{
+    width: 50%;
+    height: 100%;
+   margin-right: 10px;
+   object-fit: cover;
+}
+
+
+/* footer css  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.footer {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    text-align: center;
+    padding: 10px 20px;
+}
+
+@media all and (min-width:768px){
+    .content-area{
+        display: flex;
+    }
+    .rightSideBar{
+        /* flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 320px; */
+        flex: 0 0 320px;
+    }
+    .main-menu ul{
+        display: flex;
+        /* justify-content: space-around; */
+        margin-bottom: 0;
+    }
+    .main-menu ul li{
+        flex-grow: 1;
+    }
+    .post {
+        margin-right: 20px;
+    }
+    .movie-info {
+        display: flex;
+    }
+    .movie-inform{
+        display: flex;
+        align-self: 31%;
+        justify-content: space-between;
+    }
+    .joker {
+        height: 350px;
+    }
+    .joker.post-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .movie-today{
+        width: 100%;
+        height: 450px;
+    }
+    .movie-today-post{
+        display: flex;
+    }
+
+    .movie-today-Detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    .download-detail{
+        display: flex;
+    }
+    .download-btn{
+    display: flex;
+    justify-content: center;
+        width: 30%;
+        margin-bottom: 0;
+        height: 150px;
+      
+    }
+    .download-btn a{
+        align-self: center;
+        
+    }
+   
+    .cast-info{
+        width: 60%; 
+        text-align: center;
+        margin-top: 20px;
+    }
+    .box-rating{
+        float: right;
+        margin-top: 0;
+        width: 30%;
+    }
+    .gallary-img{
+       display: flex;
+    }
+    
+    
+}
+@media all and (min-width:1180px){
+    .content-area{
+        display: flex;
+    }
+    .rightSideBar{
+        /* flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 320px; */
+        flex: 0 0 320px;
+    }
+  
+ 
+}
